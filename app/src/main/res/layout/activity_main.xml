@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6DEDE"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:titleTextColor="@color/black"
+        android:textAlignment="center"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/schedule"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/setting"/>
+
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text=" 알람 시간 설정하기"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#F9FBF9"
+        android:onClick="clickBtn4"/>
+
+        <Button
+            android:id="@+id/tens"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="10초 후 알람"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#F9FBF9"
+            android:layout_marginBottom="150dp"
+            android:onClick="clickBtn"/>
+
+
+    <Button
+        android:id="@+id/twos"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="150dp"
+        android:layout_toRightOf="@+id/tens"
+        android:backgroundTint="#F9FBF9"
+        android:text="20초 후 알람"
+        android:textColor="@color/black"
+        android:onClick="clickBtn20"/>
+
+
+    <Button
+        android:id="@+id/thirds"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-170dp"
+        android:layout_marginBottom="88dp"
+        android:layout_toRightOf="@+id/tens"
+        android:backgroundTint="#F9FBF9"
+        android:text="30초 후 알람"
+        android:textColor="@color/black"
+        android:onClick="clickBtn30"/>
+
+    <Button
+        android:id="@+id/onemin"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="88dp"
+        android:layout_toRightOf="@+id/tens"
+        android:backgroundTint="#F9FBF9"
+        android:text="1분 후 알람"
+        android:textColor="@color/black"
+        android:onClick="clickBtn60"/>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toRightOf="@+id/reten"
+        android:backgroundTint="#F9FBF9"
+        android:onClick="clickBtn3"
+        android:text="재알람 끄기"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/reten"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-170dp"
+        android:layout_marginBottom="18dp"
+        android:layout_toRightOf="@+id/tens"
+        android:backgroundTint="#F9FBF9"
+        android:onClick="clickBtn2"
+        android:text="10초 후 알람 시작 15초마다 재 알람"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
